@@ -1,75 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Natasha Png</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script
-    src="https://kit.fontawesome.com/a0bb057924.js"
-    crossorigin="anonymous"
-  ></script>
-</head>
-<body>
+      src="https://kit.fontawesome.com/a0bb057924.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <section id="landing-page">
-        <nav>
-            <figure>
-                <img id="personal-logo" src="./assets/logo.svg" alt="">
-              </figure>
-            <ul class="nav__link--list">
-                <li class="nav__link">
-                    <a href="#" class="
-                    nav__link--anchor
-                    link__hover-effect
-                    link__hover-effect--black
-                    ">About</a>
-                </li>
-                <li class="nav__link">
-                    <a href="#" class="
-                    nav__link--anchor
-                    link__hover-effect
-                    link__hover-effect--black
-                    ">Projects</a>
-                </li>
-                <li class="nav__link">
-                    <a href="#" class="
-                    nav__link--anchor
-                    link__hover-effect
-                    link__hover-effect--black
-                    ">Contacts</a>
-                </li>
-                <li class="nav__link">
-                    <a href="#" class="
-                    nav__link--anchor
-                    link__hover-effect
-                    link__hover-effect--black
-                    "><i class="fas fa-adjust"></i></a>
-                </li>
-            </ul>
-        </nav>
-    </section>
-    <header class="header">
+      <nav>
+        <figure>
+          <img id="personal-logo" src="./assets/personal--logo.png" alt="" />
+        </figure>
+        <ul class="nav__link--list">
+          <li class="nav__link">
+            <a
+              href="#"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >About</a
+            >
+          </li>
+          <li class="nav__link">
+            <a
+              href="#"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >Projects</a
+            >
+          </li>
+          <li class="nav__link">
+            <a
+              href="#"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >Contacts</a
+            >
+          </li>
+          <li class="nav__link">
+            <a
+              href="#"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              ><i class="fas fa-adjust"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+
+      <header class="header">
         <div class="header__content">
-            <h1 class="title">Hey</h1>
-            <h1 class="title text--orange">I'm Natasha</h1>
-            <p class="header__para">
-                I'm a
-                <strong class="text--orange"
-                  >Interaction Design student from USYD</strong
-                >
-                and have a strong passion for
-                <strong class="text--orange">frontend developing</strong>
-                to create user-friendly and responsive web
-                applications.
-                <br>
-                Here's a bit more <strong class="text--orange">about me</strong>.
-                <div class="social__list">
-                  <a href="https://www.linkedin.com/in/natasha-p-ng-9a0a41269/" target="_blank" class="social__link click"><i class="fab fa-linkedin-in"></i></a>
-                  <a href="https://github.com/cubelemon" target="_blank" class="social__link click"><i class="fab fa-github"></i></a>
-                  <a href="file:///Users/natashapng/Documents/Resumes/natasha_resume.pdf" target="_blank" class="social__link click"><i class="fas fa-file-pdf"></i></a>
-                </div>
-              </p>
+          <h1 class="title">Hey</h1>
+          <h1 class="title text--orange">I'm Natasha</h1>
+          <p class="header__para">
+            I'm a
+            <strong class="text--orange"
+              >Interaction Design student from USYD</strong
+            >
+            and have a strong passion for
+            <strong class="text--orange">frontend developing</strong>
+            to create user-friendly and responsive web applications.
+            <br />
+            Here's a bit more <strong class="text--orange">about me</strong>.
+          </p>
+
+          <div class="social__list">
+            <a
+              href="https://www.linkedin.com/in/natasha-p-ng-9a0a41269/"
+              target="_blank"
+              class="social__link click"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a
+              href="https://github.com/cubelemon"
+              target="_blank"
+              class="social__link click"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a
+              href="./assets/natasha_resume.pdf"
+              target="_blank"
+              class="social__link click"
+              ><i class="fas fa-file-pdf"></i
+            ></a>
+          </div>
         </div>
-    </header>
-</body>
+      </header>
+      <button class="mail__btn click">
+        <i class="fa-solid fa-envelope"></i>
+      </button>
+      <a href="#projects" class="scroll">
+        <div class="scroll__icon click"></div>
+      </a>
+    </section>
+    <section id="projects">
+      <div class="container">
+        <div class="row">
+          <h1 class="section__title">
+            Here are some of my <span class="text--orange">Projects</span>
+          </h1>
+          <ul class="project__list">
+            <li class="project">
+              <div class="project__wrapper">
+                <img src="./assets/paynia.png" class="project__img" alt="" />
+                <div class="project__wrapper--bg"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">PayNia</h3>
+                  <h4 class="project__description--sub-title">
+                    Figma, Html, CSS
+                  </h4>
+                  <p class="project__description--para">
+                    PayNia, a testament to my UX skills, is a mobile application
+                    designed to streamline shared expense management among
+                    groups, such as housemates or friends. With a focus on
+                    user-centric design, PayNia offers intuitive features like
+                    effortless bill splitting, comprehensive expense tracking,
+                    and seamless payment management. By incorporating user
+                    feedback and employing best practices in UX design, PayNia
+                    ensures a smooth and efficient experience for its users,
+                    showcasing my ability to create user-friendly and impactful
+                    digital solutions.
+                  </p>
+                  <div class="project__description--links">
+                    <a
+                      href="https://www.figma.com/proto/hj6ssf5Yr0M3zJOiuJAzrp/PayNia-Mock-Up?page-id=0%253A1&type=design&node-id=16-2&viewport=336%252C474%252C0.13&t=HfqtuJXBszkB5urV-1&scaling=scale-down&starting-point-node-id=16%253A2"
+                      class="project__description--links"
+                    >
+                      <i class="fas fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="project">
+              <div class="project__wrapper">
+                <img
+                  src="./assets/Library Website.png"
+                  class="project__img"
+                  alt=""
+                />
+                <div class="project__wrapper--bg"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">E-Library Website</h3>
+                  <h4 class="project__description--sub-title">
+                    Figma, Html, CSS
+                  </h4>
+                  <p class="project__description--para">
+                    Introducing my online library platform, a space where you
+                    can access and read e-books seamlessly. This project
+                    demonstrates my skills in front-end development, showcasing
+                    a clean and intuitive user interface designed for easy
+                    navigation. Users can explore a wide range of e-books,
+                    purchase them, and enjoy reading directly on the platform.
+                    The website is built with responsive design, ensuring
+                    compatibility across various devices. Check out my portfolio
+                    to see more of my front-end development projects.
+                  </p>
+                  <div class="project__description--links">
+                    <a
+                      href="https://www.figma.com/proto/hj6ssf5Yr0M3zJOiuJAzrp/PayNia-Mock-Up?page-id=0%253A1&type=design&node-id=16-2&viewport=336%252C474%252C0.13&t=HfqtuJXBszkB5urV-1&scaling=scale-down&starting-point-node-id=16%253A2"
+                      class="project__description--links"
+                    >
+                      <i class="fas fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="project">
+              <div class="project__wrapper">
+                <img src="./assets/semporna.png" class="project__img" alt="" />
+                <div class="project__wrapper--bg"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">
+                    Semporna Destination Website
+                  </h3>
+                  <h4 class="project__description--sub-title">
+                    Figma, Html, CSS
+                  </h4>
+                  <p class="project__description--para">
+                    The Semporna website showcases the beauty and adventure of
+                    Sabah, Malaysia. From world-class diving spots like Sipadan
+                    to the serene luxury resorts of Mataking and Kapalai, it
+                    offers a glimpse into the diverse experiences Semporna
+                    offers. Whether diving among turtles and coral reefs or
+                    enjoying pristine beaches, Semporna promises an
+                    unforgettable escape.
+                  </p>
+                  <div class="project__description--links">
+                    <a
+                      href="https://www.canva.com/design/DAFxBpv9tbE/x9kwwiPyftAUraAVXX8QWw/edit?utm_content=DAFxBpv9tbE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                      class="project__description--links"
+                    >
+                      <i class="fas fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row footer__row">
+          <figure>
+            <img class="footer__logo--img" src="./assets/personal--logo.svg" alt="" />
+          </figure>
+          <div class="footer__social--list">
+            <a
+              href=""
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+            >
+              GitHub
+            </a>
+
+            <a
+              href=""
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+            >
+              LinkedIn
+            </a>
+
+            <a
+              href="#"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+            >
+              Contact
+            </a>
+
+            <a
+              href="./assets/natasha_resume.pdf"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+            >
+              Resume
+            </a>
+          </div>
+          <div class="footer__copyright">Made by Natasha Png</div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
