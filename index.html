@@ -10,15 +10,15 @@
       crossorigin="anonymous"
     ></script>
     <script src="script.js"></script>
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-</script>
-<script type="text/javascript">
-   (function(){
-      emailjs.init( "CjztJaVfCr5f5FXRR",
-      );
-   })();
-</script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("CjztJaVfCr5f5FXRR");
+      })();
+    </script>
   </head>
   <body>
     <section id="landing-page" onmousemove="moveBackground(event)">
@@ -73,7 +73,10 @@
             <strong class="text--orange">frontend developing</strong>
             to create user-friendly and responsive web applications.
             <br />
-            Here's a bit more <strong class="text--orange click" onclick="toggleModal()">about me</strong>.
+            Here's a bit more
+            <strong class="text--orange click" onclick="toggleModal()"
+              >about me</strong
+            >.
           </p>
 
           <div class="social__list">
@@ -204,12 +207,12 @@
           <form id="contact__form" onsubmit="contact(event)">
             <div class="form__item">
               <label class="form__item--label" for="name">Name</label>
-              <input class="input" type="text" name="user_name" required/>
+              <input class="input" type="text" name="user_name" required />
             </div>
 
             <div class="form__item">
               <label class="form__item--label" for="name">Email</label>
-              <input class="input" type="email" name="user_email" required/>
+              <input class="input" type="email" name="user_email" required />
             </div>
 
             <div class="form__item">
@@ -234,15 +237,15 @@
           </div>
         </div>
       </div>
-      <img src="./assets/semi circle.svg" class="shape shape--0">
-      <img src="./assets/circle.svg" class="shape shape--1">
-      <img src="./assets/squiggly.svg" class="shape shape--2">
-      <img src="./assets/circle.svg" class="shape shape--3">
-      <img src="./assets/triangle.svg" class="shape shape--4">
-      <img src="./assets/circle.svg" class="shape shape--5">
-      <img src="./assets/squiggly.svg" class="shape shape--6">
-      <img src="./assets/circle.svg" class="shape shape--7">
-      <img src="./assets/semi circle.svg" class="shape shape--8">
+      <img src="./assets/semi circle.svg" class="shape shape--0" />
+      <img src="./assets/circle.svg" class="shape shape--1" />
+      <img src="./assets/squiggly.svg" class="shape shape--2" />
+      <img src="./assets/circle.svg" class="shape shape--3" />
+      <img src="./assets/triangle.svg" class="shape shape--4" />
+      <img src="./assets/circle.svg" class="shape shape--5" />
+      <img src="./assets/squiggly.svg" class="shape shape--6" />
+      <img src="./assets/circle.svg" class="shape shape--7" />
+      <img src="./assets/semi circle.svg" class="shape shape--8" />
     </section>
     <section id="projects">
       <div class="container">
@@ -258,7 +261,7 @@
                 <div class="project__description">
                   <h3 class="project__description--title">PayNia</h3>
                   <h4 class="project__description--sub-title">
-                    Figma, Html, CSS
+                    Figma, Balsamic
                   </h4>
                   <p class="project__description--para">
                     PayNia, a testament to my UX skills, is a mobile application
@@ -274,8 +277,9 @@
                   </p>
                   <div class="project__description--links">
                     <a
-                      href="https://www.figma.com/proto/hj6ssf5Yr0M3zJOiuJAzrp/PayNia-Mock-Up?page-id=0%253A1&type=design&node-id=16-2&viewport=336%252C474%252C0.13&t=HfqtuJXBszkB5urV-1&scaling=scale-down&starting-point-node-id=16%253A2"
+                      href="https://www.canva.com/design/DAFzTQRo9g8/31vh8frnebSvDT0KZKTIjw/edit?utm_content=DAFzTQRo9g8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
                       class="project__description--links"
+                      target="_blank"
                     >
                       <i class="fas fa-link"></i>
                     </a>
@@ -286,32 +290,117 @@
 
             <li class="project">
               <div class="project__wrapper">
+                <img src="./assets/Muafakat.png" class="project__img" alt="" />
+                <div class="project__wrapper--bg"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">Muafakat Website</h3>
+                  <h4 class="project__description--sub-title">
+                    Figma, Balsamic
+                  </h4>
+                  <p class="project__description--para">
+                    I designed and developed the official website for the
+                    Muafakat Games 2024, an annual sports event organized by
+                    Malaysian students in Australia. This event, which fosters
+                    unity and camaraderie among students and alumni from diverse
+                    backgrounds, receives direct support from Education Malaysia
+                    Australia and the High Commissioner. Using Figma for design
+                    and HTML and CSS for development, I created a visually
+                    appealing and user-friendly platform that captures the
+                    spirit of the games and provides essential information for
+                    participants and supporters.
+                  </p>
+                  <div class="project__description--links">
+                    <a
+                      href="https://www.muafakatgames2024.com/" target="_blank"
+                      class="project__description--links"
+                    >
+                      <i class="fas fa-link"></i>
+                    </a>
+                    <a href="https://github.com/cubelemon/Muafakat" 
+                    class="project__description--links"
+                    target="_blank">
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="project">
+              <div class="project__wrapper">
                 <img
-                  src="./assets/Library Website.png"
+                  src="./assets/Movie_plug.png"
                   class="project__img"
                   alt=""
                 />
                 <div class="project__wrapper--bg"></div>
                 <div class="project__description">
-                  <h3 class="project__description--title">E-Library Website</h3>
+                  <h3 class="project__description--title">Movie Plug</h3>
                   <h4 class="project__description--sub-title">
-                    Figma, Html, CSS
+                    Figma, HTML, CSS, JavaScript
                   </h4>
                   <p class="project__description--para">
-                    Introducing my online library platform, a space where you
-                    can access and read e-books seamlessly. This project
-                    demonstrates my skills in front-end development, showcasing
-                    a clean and intuitive user interface designed for easy
-                    navigation. Users can explore a wide range of e-books,
-                    purchase them, and enjoy reading directly on the platform.
-                    The website is built with responsive design, ensuring
-                    compatibility across various devices. Check out my portfolio
-                    to see more of my front-end development projects.
+                    MoviePlug is a dynamic and user-friendly web application
+                    that allows users to effortlessly search for movies and
+                    explore detailed information about them. Built using vanilla
+                    JavaScript, the website leverages API integration to deliver
+                    real-time movie data, including summaries, ratings, and
+                    more. The clean, intuitive interface ensures an engaging
+                    user experience, making it a valuable resource for movie
+                    enthusiasts. This project showcases my ability to develop
+                    responsive, API-driven web applications from scratch.
                   </p>
                   <div class="project__description--links">
                     <a
-                      href="https://www.figma.com/proto/hj6ssf5Yr0M3zJOiuJAzrp/PayNia-Mock-Up?page-id=0%253A1&type=design&node-id=16-2&viewport=336%252C474%252C0.13&t=HfqtuJXBszkB5urV-1&scaling=scale-down&starting-point-node-id=16%253A2"
+                      href="https://cubelemon.github.io/JavaScript-Final-Project/"
                       class="project__description--links"
+                      target="_blank"
+                    >
+                      <i class="fas fa-link"></i>
+                    </a>
+                    <a href="https://github.com/cubelemon/JavaScript-Final-Project" 
+                    class="project__description--links"
+                    target="_blank">
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="project">
+              <div class="project__wrapper">
+                <img
+                  src="./assets/scoop-for-justice.png"
+                  class="project__img"
+                  alt=""
+                />
+                <div class="project__wrapper--bg"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">Scoop for Justice</h3>
+                  <h4 class="project__description--sub-title">
+                    Adobe Illustrator, Adobe Photoshop
+                  </h4>
+                  <p class="project__description--para">
+                    For this project, I crafted a thoughtful Instagram campaign
+                    for Mercy Malaysia in collaboration with Ben & Jerry's,
+                    designed to raise awareness and funds for humanitarian aid
+                    in Gaza. Utilizing Adobe Illustrator and Photoshop, I
+                    developed a series of impactful tiles that integrate Ben &
+                    Jerry's recognizable branding with urgent, sensitive
+                    messaging about the crisis in Rafah. The campaign introduces
+                    a new pistachio flavor, connecting to Palestinian culture,
+                    and includes a clear call to action: encouraging viewers to
+                    purchase the flavor to directly support humanitarian
+                    efforts. By carefully balancing engaging visuals with
+                    respectful, culturally aware content, the campaign is both
+                    compelling and mindful of the gravity of the issue.
+                  </p>
+                  <div class="project__description--links">
+                    <a
+                      href="https://www.canva.com/design/DAGFwi4vmUM/4q2ByNaIrpYTaJ67Sc9CSw/edit?utm_content=DAGFwi4vmUM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                      class="project__description--links"
+                      target="_blank"
                     >
                       <i class="fas fa-link"></i>
                     </a>
@@ -319,7 +408,6 @@
                 </div>
               </div>
             </li>
-
             <li class="project">
               <div class="project__wrapper">
                 <img src="./assets/semporna.png" class="project__img" alt="" />
@@ -368,14 +456,16 @@
           </figure>
           <div class="footer__social--list">
             <a
-              href="https://github.com/cubelemon" target="_blank"
+              href="https://github.com/cubelemon"
+              target="_blank"
               class="footer__social--link link__hover-effect link__hover-effect--white"
             >
               GitHub
             </a>
 
             <a
-              href="https://www.linkedin.com/in/natasha-p-ng-9a0a41269/" target="_blank"
+              href="https://www.linkedin.com/in/natasha-p-ng-9a0a41269/"
+              target="_blank"
               class="footer__social--link link__hover-effect link__hover-effect--white"
             >
               LinkedIn
@@ -384,12 +474,14 @@
             <a
               href="#"
               class="footer__social--link link__hover-effect link__hover-effect--white"
-              onclick="toggleModal()">
+              onclick="toggleModal()"
+            >
               Contact
             </a>
 
             <a
-              href="./assets/natasha_resume.pdf" target="_blank"
+              href="./assets/natasha_resume.pdf"
+              target="_blank"
               class="footer__social--link link__hover-effect link__hover-effect--white"
             >
               Resume

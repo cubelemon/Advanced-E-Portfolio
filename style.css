@@ -70,7 +70,8 @@ label {
 
 .row {
     width: 100%;
-    max-width: 0 auto;
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 0 12px;
 }
 
