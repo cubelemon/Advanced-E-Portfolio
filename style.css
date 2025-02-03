@@ -99,6 +99,10 @@ label {
     color: #f06449;
 }
 
+.text--blue {
+    color: #485be3;
+}
+
 .button {
     cursor: pointer;
 }
@@ -247,7 +251,7 @@ nav {
 .header__para {
     font-size: 24px;
     line-height: 2;
-    max-width: 450px;
+    max-width: 600px;
 }
 
 .social__list {
@@ -267,6 +271,10 @@ nav {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+}
+
+.bg--blue {
+    background-color: #485be3
 }
 
 .mail__btn {
