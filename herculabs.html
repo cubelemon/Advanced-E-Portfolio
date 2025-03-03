@@ -24,7 +24,7 @@
     <section id="landing-page" onmousemove="moveBackground(event)">
       <nav>
         <figure>
-          <img id="personal-logo" src="./assets/personal--logo.png" alt="" />
+          <a href="index.html"><img id="personal-logo" src="./assets/personal--logo.png" alt="" /></a>
         </figure>
         <ul class="nav__link--list">
           <li class="nav__link">
@@ -61,35 +61,44 @@
       </nav>
 
       <header class="header">
-        <div class="header__content">
-          <h1 class="title text--blue">Herculabs</h1>
-          <span><h1 class="title">The Olympian Simulator Booth</h1></span>
-          <p class="header__para">
-            A Case Study: Bringing fans closer to Olympians
-          </p>
+        <div class="row__hori">
+          <div class="header__content row__half">
+            <h1 class="title text--blue">Herculabs</h1>
+            <span><h1 class="title">Olympian Simulator Booth</h1></span>
+            <p class="header__para">
+              A Case Study: Bringing fans closer to Olympians
+            </p>
 
-          <div class="social__list">
-            <a
-              href="https://www.linkedin.com/in/natasha-p-ng-9a0a41269/"
-              target="_blank"
-              class="social__link bg--blue click"
-              ><i class="fab fa-linkedin-in"></i
-            ></a>
-            <a
-              href="https://github.com/cubelemon"
-              target="_blank"
-              class="social__link bg--blue click"
-              ><i class="fab fa-github"></i
-            ></a>
-            <a
-              href="./assets/Natasha_Resume_August_2024 copy.pdf"
-              target="_blank"
-              class="social__link bg--blue click"
-              ><i class="fas fa-file-pdf"></i
-            ></a>
+            <div class="social__list">
+              <a
+                href="https://www.linkedin.com/in/natasha-p-ng-9a0a41269/"
+                target="_blank"
+                class="social__link bg--blue click"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a
+                href="https://github.com/cubelemon"
+                target="_blank"
+                class="social__link bg--blue click"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a
+                href="./assets/Natasha_Resume_August_2024 copy.pdf"
+                target="_blank"
+                class="social__link bg--blue click"
+                ><i class="fas fa-file-pdf"></i
+              ></a>
+            </div>
           </div>
+
+          <!-- <div class="row__half">
+                <figure class="header__img--wrapper">
+                    <img src="/assets/herculabs__mockup.png" alt="" class="header__img">
+                </figure>
+              </div> -->
         </div>
       </header>
+
       <a href="#">
         <button class="mail__btn click" onclick="toggleModal()">
           <i class="fa-solid fa-envelope"></i>
@@ -270,28 +279,289 @@
     <section id="casestudy">
       <div class="container">
         <div class="row">
-            <ul class="casestudy__sections">
-
-            </ul>
+          <ul class="casestudy__sections">
             <li class="casestudy__item">
-                <h2 class="casestudy__title">Introduction</h2>
-                <div class="casestudy__item--row">
-                    <img src="./assets/herculabs.png" alt="" />
-                    <p class="case--para">
-                      What if you could step into the shoes of an Olympic champion?
-                      Imagine the roar of the crowd, the pressure of a game-defining
-                      moment, and the exhilaration of triumph. HercuLabs brought this
-                      vision to life through the Athlete Experience Simulator Booth, a
-                      VR-powered innovation designed to create meaningful connections
-                      between fans and Olympians, extending the magic of the games far
-                      beyond the closing ceremony.
-                    </p>
-    
+              <h2 class="casestudy__title">Introduction</h2>
+              <div class="casestudy__item--row">
+                <figure class="casestudy__img--wrapper">
+                  <img
+                    class="casestudy__item--img"
+                    src="./assets/herculabs.png"
+                    alt=" "
+                  />
+                </figure>
+
+                <div class="casestudy__item--content right">
+                  <h3 class="case--title">
+                    <strong
+                      >What if you could step into the shoes of an Olympic
+                      champion?</strong
+                    >
+                  </h3>
+                  <br />
+                  <p class="case--para">
+                    Imagine the roar of the crowd, the pressure of a
+                    game-defining moment, and the exhilaration of triumph.
+                    HercuLabs brought this vision to life through the
+                    <strong class="text--blue"
+                      >Athlete Experience Simulator Booth</strong
+                    >, a VR-powered innovation designed to create meaningful
+                    connections between fans and Olympians, extending the magic
+                    of the games far beyond the closing ceremony.
+                  </p>
                 </div>
+              </div>
             </li>
-          
+
+            <li class="casestudy__item">
+              <h2 class="casestudy__title">The Problem</h2>
+              <div class="casestudy__item--row">
+                <div class="casestudy__item--content">
+                  <h3 class="case--title">
+                    <strong
+                      >The Olympic Games are a global spectacle that captures
+                      the world’s attention, but their impact is often
+                      fleeting.</strong
+                    >
+                  </h3>
+                  <br />
+                  <p class="case--para">
+                    Fans lose their connection to the athletes once the event
+                    ends, while athletes face challenges staying visible until
+                    the next competition.
+                    <strong class="text--blue">
+                      HercuLabs aimed to address this gap, ensuring the Olympic
+                      spirit lives on and continues to inspire </strong
+                    >.
+                  </p>
+                </div>
+
+                <figure class="casestudy__img--wrapper right">
+                  <img
+                    class="casestudy__item--img"
+                    src="./assets/Herculab/herculabs__problem.png"
+                    alt=" "
+                  />
+                </figure>
+              </div>
+            </li>
+
+            <li class="casestudy__item">
+              <h2 class="casestudy__title">The Vision</h2>
+              <div class="casestudy__item--row">
+                <figure class="casestudy__img--wrapper">
+                  <img
+                    class="casestudy__item--img"
+                    src="./assets/Herculab/vision.png"
+                    alt=" "
+                  />
+                </figure>
+
+                <div class="casestudy__item--content right">
+                  <h3 class="case--title">
+                    <strong
+                      >HercuLabs envisioned a fan experience that went beyond
+                      spectating.</strong
+                    >
+                  </h3>
+                  <br />
+                  <p class="case--para">
+                    By allowing users to embody their favorite athletes, the
+                    simulator created an intimate, empathetic, and long-lasting
+                    bond between fans and Olympians.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li class="casestudy__item">
+              <h2 class="casestudy__title">The Solution</h2>
+              <div class="casestudy__item--row">
+                <div class="casestudy__item--content">
+                  <h3 class="case--title">
+                    <strong
+                      >The Athlete Experience Simulator Booth transformed fan
+                      engagement through:</strong
+                    >
+                  </h3>
+                  <br />
+                  <ol class="casestudy__item--list">
+                    <li class="item__list--item">
+                      <strong>Immersive VR Gameplay:</strong> Users could
+                      compete as Olympic legends like Ma Long, experiencing the
+                      thrill of high-stakes matches.
+                    </li>
+                    <li class="item__list--item">
+                      <strong>Interactive Photo Booths:</strong> Fans captured
+                      memories with virtual avatars of their favorite athletes
+                      in iconic Olympic settings.
+                    </li>
+                    <li class="item__list--item">
+                      <strong>Personalized Experiences:</strong> Fitness levels
+                      and gameplay challenges were adjustable, making the booth
+                      accessible to all participants.
+                    </li>
+                  </ol>
+                </div>
+
+                <figure class="casestudy__img--wrapper right">
+                  <img
+                    class="casestudy__item--img"
+                    src="./assets/Herculab/solution.png"
+                    alt=" "
+                  />
+                </figure>
+              </div>
+            </li>
+
+            <li class="casestudy__item">
+              <h2 class="casestudy__title">Omnichannel Integration</h2>
+              <div class="casestudy__item--row item__column">
+                <figure class="casestudy__img--wrapper item__wide">
+                  <img
+                    class="casestudy__item--img"
+                    src="./assets/Herculab/omni.png"
+                    alt=" "
+                  />
+                </figure>
+
+                <div class="casestudy__item--content item__wide bottom">
+                  <h3 class="case--title">
+                    HercuLabs enhanced the booth’s impact by integrating it into
+                    a broader omnichannel ecosystem, ensuring fans remained
+                    connected across platforms:
+                  </h3>
+                  <br />
+                  <ul class="casestudy__item--list">
+                    <li class="item__list--item">
+                      A companion app delivered digital mementos, such as VR
+                      highlights and photos, directly to users’ devices.
+                    </li>
+                    <li class="item__list--item">
+                      The app provided exclusive athlete content, updates on
+                      future events, and an online community for fans to share
+                      their experiences.
+                    </li>
+                    <li class="item__list--item">
+                      This seamless connection kept fans engaged long after
+                      their physical visit to the booth.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+
+            <li class="casestudy__item">
+              <h2 class="casestudy__title">Prototype</h2>
+              <div class="casestudy__item--row item__column">
+                <figure class="casestudy__img--wrapper item__wide">
+                  <iframe
+                    style="border: 1px solid rgba(0, 0, 0, 0.1)"
+                    width="800"
+                    height="450"
+                    src="https://embed.figma.com/proto/t0IXpfZeCPmihOlmrBNThk/A3-Digital-Interfaces?page-id=199%3A824&node-id=2913-4194&viewport=1035%2C-3926%2C0.09&scaling=contain&content-scaling=fixed&starting-point-node-id=2913%3A4192&show-proto-sidebar=1&embed-host=share"
+                    allowfullscreen
+                    class="prototype"
+                  ></iframe>
+                </figure>
+
+                <div class="casestudy__item--content item__wide bottom">
+                  <h3 class="case--title column__title">
+                    Above is the Virtual Reality experience prototyped with
+                    videos in Figma
+                  </h3>
+                </div>
+              </div>
+            </li>
+
+            <li class="casestudy__item">
+              <h2 class="casestudy__title">The Impact</h2>
+              <div class="casestudy__item--row item__column">
+                <figure class="casestudy__img--wrapper item__wide">
+                  <img
+                    class="casestudy__item--img"
+                    src="./assets/Herculab/relation.png"
+                    alt=" "
+                  />
+                </figure>
+
+                <div class="casestudy__item--content item__wide bottom">
+                  <h3 class="case--title">
+                    Feedback demonstrated the transformative potential of the
+                    HercuLabs solution:
+                  </h3>
+                  <br />
+                  <ul class="casestudy__item--list">
+                    <li class="item__list--item">
+                      <strong>Deeper Connections: </strong>Fans felt a renewed
+                      appreciation for the dedication and skill of their
+                      favourite athletes.
+                    </li>
+                    <li class="item__list--item">
+                      <strong>Social Media Buzz: </strong>Digital keepsakes,
+                      such as photos and VR clips, drove social sharing and
+                      excitement.
+                    </li>
+                    <li class="item__list--item">
+                      <strong>Sustained Engagement: </strong>Fans remained
+                      active participants in the Olympic narrative, staying
+                      connected through the app.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
+
+    <footer>
+      <div class="container">
+        <div class="row footer__row">
+          <figure>
+            <img
+              class="footer__logo--img"
+              src="./assets/personal--logo.svg"
+              alt=""
+            />
+          </figure>
+          <div class="footer__social--list">
+            <a
+              href="https://github.com/cubelemon"
+              target="_blank"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+            >
+              GitHub
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/natasha-p-ng-9a0a41269/"
+              target="_blank"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+            >
+              LinkedIn
+            </a>
+
+            <a
+              href="#"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+              onclick="toggleModal()"
+            >
+              Contact
+            </a>
+
+            <a
+              href="./assets/Natasha_Resume_August_2024 copy.pdf"
+              target="_blank"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+            >
+              Resume
+            </a>
+          </div>
+          <div class="footer__copyright">Made by Natasha Png</div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
