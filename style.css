@@ -94,7 +94,7 @@ label {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 4rem;
+    padding: 0 2rem;
 }
 
 .click{
@@ -118,7 +118,7 @@ label {
 }
 
 .about--title {
-    font-size: 2em;
+    font-size: 3em;
 }
 
 .about--subtitle {
@@ -650,8 +650,8 @@ CASESTUDY
 .casestudy__title {
     font-size: 2rem;
     display: flex;
-    justify-content: center;
-    padding-bottom: 2rem;
+    justify-content: start;
+    padding-bottom: 0.5rem;
 }
 
 .casestudy__item {
@@ -730,18 +730,18 @@ ABOUT
     width: 50%;
     display: flex;
     flex-direction: column;
-    align-items: start;
 }
 
 .row__left {
-    margin-right: 2rem;
+    margin-right: 4rem;
 }
 
 .exp__list--item {
     display: flex;
     width: 100%;
     justify-content:space-between;
-    padding: 1rem 0;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
     border-bottom: 1px solid #c0c4cc; 
 }
 
@@ -754,6 +754,11 @@ ABOUT
 .list__subtitle {
     color: #777777;
     padding: 1rem 0;
+}
+
+.list__date {
+    color: #242424;
+    font-weight: 300
 }
 
 
@@ -875,17 +880,32 @@ Small phone
 
 */
 @media(max-width: 480px) {
-    .title {
+    .title
+     {
         font-size: 48px;
     }
 
-    .header {
+    .header,
+    .about--title {
         font-size: 18px;
     }
 
-    .nav__link:first-child {
+    .about--subtitle {
+        font-size: 16px;
+    }
+
+    br {
+        line-height: 16px;
+    }
+
+    .section__para {
+        font-size: 1rem;
+    }
+
+    .nav__link:nth-child(2) {
         display: none;
     }
+    
 
     .project__description--para {
         display: none;
@@ -905,4 +925,25 @@ Small phone
     .modal__half {
         padding: 40px;
     }
+
+    .row__header {
+        flex-direction: column;
+    }
+
+    .direction__column {
+        flex-direction: column;
+    }
+
+    .row__half {
+        width: 100%;
+    }
+
+    .row__left {
+        padding: 0;
+        margin-bottom: 1.2rem;
+    }
+
+
+
+ 
 }
