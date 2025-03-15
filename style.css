@@ -640,6 +640,43 @@ nav {
     transition: all 450ms ease;
 }
 
+/*
+
+DESIGNS
+
+*/
+
+.design__list {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.design {
+    padding: 0rem 1rem;
+    width: 50%;
+    margin-bottom: 3rem;
+}
+
+.design__img--wrapper {
+    display: flex;
+    z-index: 100;
+    margin-bottom: 2rem;
+}
+
+.design__caption {
+    margin-bottom: 1rem;
+}
+
+.grey {
+    color: #777777;
+}
+
+.design__img {
+    border-radius: 16px;
+    box-shadow: 0 20px 80px 0 rgb(0, 0, 0, 0.2);
+    z-index: 1000;
+}
 
 /*
 
@@ -933,6 +970,15 @@ Small phone
         padding: 0;
         width: 100%;
         text-align: center;
+    }
+
+    .project__list {
+        flex-direction: column;
+    }
+
+    .project,
+    .design {
+        width:100%
     }
 
     .project__description--sub-title {
