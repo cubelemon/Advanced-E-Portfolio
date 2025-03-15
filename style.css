@@ -558,8 +558,15 @@ nav {
 */
 
 .project {
-    margin-bottom: 135px;
+    margin-bottom: 4rem;
+    width: 50%;
+    padding: 0rem 1rem;
   }
+
+.project__list {
+    display: flex;
+    flex-wrap: wrap
+}
 
 .section__title {
     text-align: center;
@@ -592,7 +599,7 @@ nav {
 .project__description {
     position: absolute;
     top: 50%;
-    left: 30%;
+    left: 10%;
     transform: translateY(-100%);
     opacity: 0;
     transition: opacity 300ms, transform 450ms ease;
