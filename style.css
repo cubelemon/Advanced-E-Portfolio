@@ -696,6 +696,16 @@ CASESTUDY
     width: 50%;
 }
 
+.title-center {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+iframe {
+    z-index: 100;
+}
+
 .right {
     padding-left: 1rem;
 }
