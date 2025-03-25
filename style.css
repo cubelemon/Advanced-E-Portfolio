@@ -815,6 +815,24 @@ ABOUT
     font-weight: 300
 }
 
+.language__list {
+    display: flex;
+    margin-bottom: 2rem;
+
+}
+
+.language__wrapper {
+    padding: 1rem;
+    transition: transform 0.3s ease-in-out; /* Smooth animation */
+  }
+  
+  .language__wrapper:hover {
+    transform: scale(1.1); /* Makes it 10% bigger on hover */
+  }
+
+  .language__row {
+   flex-wrap: nowrap;
+  }
 
 /*
 
