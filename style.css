@@ -88,7 +88,10 @@ label {
     display: flex;
 }
 
-
+.project__link {
+    color: white;
+    text-decoration: none; /* Optional: Removes underline if present */
+}
 
 .row {
     width: 100%;
