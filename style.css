@@ -149,8 +149,36 @@ label {
     width: fit-content;
 }
 
+
+/*
+
+ABOUT
+
+*/
+
+.header__content--wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1080px;
+}
+
+.me__img--wrapper {
+    width: 70%;
+    transform: scale(1.125);
+    transition: transform 0.3s ease; /* Smooth transition for the tilt effect */
+}
+
+.me__img--wrapper:hover {
+    transform: rotate(-3deg) scale(1.25); /* Slight tilt and zoom effect */
+}
+
+
 .about--title {
     font-size: 3em;
+    padding-bottom: 0.5rem;
 }
 
 .about__item {
@@ -1177,6 +1205,10 @@ footer {
         width: 100%; /* Make images responsive */
         margin: 0 0 1rem 0; /* Add spacing below the image */
       }
+
+      .about--subtitle {
+        padding: 0; /* Adjust subtitle size */
+      }
     
       .section__para {
         width: 100%; /* Ensure text takes full width */
@@ -1246,13 +1278,8 @@ Small phone
         padding: 40px;
     }
 
-    .row__header {
-        flex-direction: column;
-    }
-
-    .direction__column {
-        flex-direction: column;
-    }
+  
+  
 
     .row__half {
         width: 100%;
@@ -1281,5 +1308,10 @@ Small phone
     line-height: 1.2;
    }
 
+
+   .header__content--wrapper {
+    flex-direction: column;
+    text-align: center;
+   }
  
 }
