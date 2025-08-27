@@ -146,6 +146,7 @@ label {
     margin-bottom: 12px;
     text-align: left;
     line-height: 1;
+    width: fit-content;
 }
 
 .about--title {
@@ -414,7 +415,7 @@ z-index: 1000;
     font-size: 28px;
     font-weight: 400;
     line-height: 2;
-    max-width: 100%;
+    max-width:75%;
     padding-bottom: 1rem;
     color: #00000088;
 }
@@ -1037,13 +1038,17 @@ footer {
     position: relative;
     background-color: #0d474492;
     display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 6% 0;
 }
 
 .footer__row {
     display: flex;
+    width: 100%;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .footer__logo--img {
@@ -1053,11 +1058,15 @@ footer {
 
 .footer__social--list {
     width: 100%;
-    max-width: 60%;
+    
     display: flex;
     justify-content: space-around;
     margin: 28px 0;
 
+}
+
+.footer__social--link {
+    padding: 0 0.15rem;
 }
 
 .footer__social--link,
@@ -1254,7 +1263,23 @@ Small phone
         margin-bottom: 1.2rem;
     }
 
+   .header__img--wrapper {
+    display: none;
+   }
 
+   .header__content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   }
+
+   .title {
+    text-align: center;
+    line-height: 1.2;
+   }
 
  
 }
