@@ -141,7 +141,7 @@ label {
 }
 
 .title {
-    font-size: 120px;
+    font-size: 108px;
     color: #051616dc;
     margin-bottom: 12px;
     text-align: left;
@@ -377,8 +377,37 @@ z-index: 1000;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
-    max-width: 1000px;
+    max-width: 1080px;
     padding: 0 30px;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    
+}   
+
+.header__content {
+    width: 100%;
+}
+
+.header__img--wrapper {
+    width:30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease; /* Smooth transition for the tilt effect */
+}
+
+.header__img--wrapper:hover {
+    transform: rotate(7deg) scale(1.5); /* Slight tilt and zoom effect */
+}
+
+.header__img {
+    width: 100%;
+    height: auto;
+    transform: scale(1.25);
 }
 
 .header__para {
@@ -387,7 +416,7 @@ z-index: 1000;
     line-height: 2;
     max-width: 100%;
     padding-bottom: 1rem;
-    color: #777777;
+    color: #00000088;
 }
 
 .social__list {
