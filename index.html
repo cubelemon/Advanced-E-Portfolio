@@ -20,13 +20,19 @@
       })();
     </script>
   </head>
+
   <body>
+    <canvas id="background"></canvas>
     <section id="landing-page" onmousemove="moveBackground(event)">
+  
       <nav>
-        <figure>
-          <a href="index.html"><img id="personal-logo" src="./assets/personal--logo.png" alt="" /></a>
-        </figure>
+        
         <ul class="nav__link--list">
+          <li>
+            <figure>
+              <a href="index.html"><img id="personal-logo" src="./assets/personal--logo.png" alt="" /></a>
+            </figure>
+          </li>
           <li class="nav__link">
             <a
               href="about.html"
@@ -63,21 +69,10 @@
       <header class="header">
         <div class="header__content">
           <h1 class="title">Hey</h1>
-          <h1 class="title text--orange">I'm Natasha</h1>
-          <p class="header__para">
-            I'm a
-            <strong class="text--orange"
-              >Interaction Design student from University of Sydney</strong
-            >
-            and have a strong passion for
-            <strong class="text--orange">frontend developing</strong>
-            to create user-friendly and responsive web applications.
-            <br />
-            Here's a bit more
-            <strong class="text--orange click" onclick="toggleModal()"
-              >about me</strong
-            >.
-          </p>
+          <h1 class="title ">I'm Natasha</h1>
+          <h2 class="header__para">
+            User Experience Designer based in Sydney
+          </h2>
 
           <div class="social__list">
             <a
@@ -118,16 +113,8 @@
             UX Designer / Frontend Engineer
           </h4>
           <p class="modal__para">
-            I'm a 
-            <b class="text--orange">UX Designer</b> with a strong
-            passion for developing websites with great
-            <b class="text--orange">user experiences</b>.
-            <br />
-            I currently work on high difficulty engineering problems and design
-            briefs from a team of <b class="text--orange">talented</b> and
-            <b class="text--orange">experienced</b> software engineers every
-            day.
-          </p>
+            I’m an interaction designer who sees every design as a work in progress — imperfect but full of potential. 
+            I thrive in fast-moving environments, adapting quickly, shipping often, and using each iteration as a launchpad for innovation.  </p>
           <div class="modal__languages">
             <div class="modal__languages">
               <figure class="modal__language">
@@ -167,7 +154,7 @@
               <figure class="modal__language">
                 <img
                   class="modal__language--img"
-                  src="https://static-00.iconduck.com/assets.00/figma-icon-1024x1024-mvfh9xsk.png"
+                  src="https://www.figma.com/community/resource/b2593c93-dcd3-4eab-942a-b7703505d1eb/thumbnail"
                   alt=""
                 />
                 <span class="language__name">Figma</span>
@@ -266,7 +253,7 @@
           </div>
         </div>
       </div>
-      <img src="./assets/semi circle.svg" class="shape shape--0" />
+      <!-- <img src="./assets/semi circle.svg" class="shape shape--0" />
       <img src="./assets/circle.svg" class="shape shape--1" />
       <img src="./assets/squiggly.svg" class="shape shape--2" />
       <img src="./assets/circle.svg" class="shape shape--3" />
@@ -274,9 +261,18 @@
       <img src="./assets/circle.svg" class="shape shape--5" />
       <img src="./assets/squiggly.svg" class="shape shape--6" />
       <img src="./assets/circle.svg" class="shape shape--7" />
-      <img src="./assets/semi circle.svg" class="shape shape--8" />
+      <img src="./assets/semi circle.svg" class="shape shape--8" /> -->
     </section>
 
+    
+    <section id="design-philosophy">
+      <div class="container callout__container">
+        <h2 class="callout__title">
+          I see imperfect designs as launchpads — <span class="italics">every flaw fuels the next innovation</span>. I move fast, adapt faster, and treat every iteration as progress.
+        </h2>
+  
+      </div>
+    </section>
     
     <section id="projects">
       <div class="container">
@@ -302,10 +298,10 @@
                     <div class="project__description--links">
                       <a
                         href="https://www.behance.net/gallery/223008217/Herculabs-UX-Design-Case-Study"
-                        class="project__description--links"
+                        class="project__button"
                         target="_blank"
                       >
-                        <i class="fas fa-link"></i>
+                        View Project
                       </a>
                     </div>
                   </div>
@@ -329,10 +325,10 @@
                     <div class="project__description--links">
                       <a
                         href="https://www.behance.net/gallery/223392855/Rajang-Website-Revamp"
-                        class="project__description--links"
+                        class="project__button"
                         target="_blank"
                       >
-                        <i class="fas fa-link"></i>
+                        View Project
                       </a>
                     </div>
                   </div>
@@ -603,5 +599,7 @@
         </div>
       </div>
     </footer>
+
+    
   </body>
 </html>

@@ -4,11 +4,31 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Inter', sans-serif; /* Set Inter as the default font */
 }
 
 html {
     scroll-behavior: smooth;
+}
+
+#background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Ensure it stays behind the content */
+    background: radial-gradient(circle at 10% 10%, #fceabb, transparent 50%),
+                radial-gradient(circle at 70% 90%, #84ddda, transparent 50%);
+    transition: background 0.1s ease;
+}
+
+button {
+    border-radius: 5%;
+}
+
+.italics {
+    font-style: italic;
 }
 
 li {
@@ -31,7 +51,7 @@ hr {
 }
 
 section {
-    background-color: rgb(245, 245, 245);
+    background: transparent;
     transition: all 300ms ease;
 }
 
@@ -59,7 +79,7 @@ textarea:hover {
 
 input:focus,
 textarea:focus {
-    border-color: #f06449;
+    border-color: #0c9590;
 }
 
 textarea {
@@ -76,6 +96,13 @@ label {
 .container {
     padding: 50px 0;
     width: 100%;
+}
+.container__center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
 }
 
 .direction__row {
@@ -124,13 +151,49 @@ label {
     font-size: 3em;
 }
 
+.about__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+  
+  .about__item--reverse {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .about__img {
+    width: 50%;
+    max-width: 100%;
+    margin: 0 2rem;
+    transition: transform 0.3s ease; /* Smooth transition for the tilt effect */
+}
+
+.about__img:hover {
+    transform: rotate(-3deg) scale(1.05); /* Slight tilt and zoom effect */
+}
+  .img--long {
+    width: 30%;
+    max-width: 80%;
+  }
+  
+  .section__para {
+    width: 50%;
+    max-width: 100%;
+  }
+
+  .para--long {
+    width: 70%;
+  }
+
 .about--subtitle {
     font-size: 1.5em;
+    padding-bottom: 2rem;
     color: #777777;
 }
 
 .text--orange {
-    color: #f06449;
+    color: #0c9590;
 }
 
 .text--blue {
@@ -200,10 +263,14 @@ nav,
 .dark-theme .case--para,
 .dark-theme .item__list--item,
 .dark-theme .header__para,
-.dark-theme .about--title
+.dark-theme .design__caption,
+.dark-theme .about--title,
+.dark-theme .list__title
 {
     color: white;
 }
+
+
 
 .dark-theme section
 {
@@ -236,32 +303,57 @@ nav,
 #personal-logo {
     width: 40px;
     height: 40px;
+    margin-right: 20px;
+    padding: 4px;
 }
 
+#landing-page {
+    justify-content: center;
+}
+
+/* Center the navigation bar and apply frosty glass effect */
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-    height: 100px;
+   position:relative;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 20px 0;
+z-index: 1000;
 }
 
+/* Style the navigation links */
 .nav__link--list {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%; /* Adjust width as needed */
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
+    backdrop-filter: blur(10px); /* Frosty glass effect */
+    border-radius: 24px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    z-index: 1000; /* Ensure it stays above other elements */
+    justify-content: space-around;
+
 }
 
 .nav__link {
-    margin: 0 12px;
+    list-style: none;
+    padding: 0 5%;
 }
 
 .nav__link--anchor {
     text-decoration: none;
     font-size: 16px;
-    color: #242424;
-    font-weight: 700;
+    font-weight: normal; /* Remove bold styling */
+    font-family: 'Inter', sans-serif; /* Ensure font is Inter */
+    color: #242424; /* Dark text color */
+    transition: color 0.3s ease;
+}
+
+.nav__link--anchor:hover {
+    color: #0c9590; /* Highlight color on hover */
 }
 
 .fa-adjust {
@@ -291,7 +383,9 @@ nav {
 .header__para {
     font-size: 24px;
     line-height: 2;
-    max-width: 600px;
+    max-width: 100%;
+    padding-bottom: 1rem;
+    color: #777777;
 }
 
 .social__list {
@@ -300,7 +394,7 @@ nav {
 }
 
 .social__link {
-    background-color: #f06449;
+    background-color: #0c9590;
     color: white;
     padding: 6px;
     width: 32px;
@@ -369,6 +463,9 @@ nav {
     }
 }
 
+
+
+  
 /*
 
     MODAL
@@ -423,6 +520,7 @@ nav {
     display: flex;
     flex-wrap: wrap;
 }
+
 
 .modal__language {
     width: 25%;
@@ -481,8 +579,9 @@ nav {
 
 
 .form__submit {
-    background-color: #f06449;
-    border: 2px solid #f06449;
+    background-color: #0c9590;
+    border: 2px solid #0c9590;
+    border-radius: 5%;
     color: white;
     font-weight: 700;
     width: 100%;
@@ -497,8 +596,8 @@ nav {
 }
 
 .form__submit:active {
-    border-color: #f06449;
-    color: #f06449;
+    border-color: #0c9590;
+    color: #0c9590;
 }
 
 .modal__overlay {
@@ -552,6 +651,41 @@ nav {
     color: #fff;
     font-size: 36px;
     z-index: 100;
+}
+
+/* Center and style the Design Philosophy section */
+#design-philosophy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full screen height */
+    background: #fceabb; /* Light off-white background */
+    text-align: center; /* Center-align the text */
+   
+}
+
+.callout__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px; /* Limit the width of the container */
+    padding: 0 20px; /* Add some horizontal padding */
+}
+
+/* When the section becomes visible */
+#design-philosophy.visible {
+    opacity: 1;
+    transform: translateY(0); /* Slide into place */
+}
+
+.callout__title {
+    font-size: 2rem; /* Adjust font size */
+    font-weight: bold; /* Make the text bold */
+    color: #084448; /* Dark text color */
+    line-height: 2; /* Improve readability */
+    font-family: 'Inter', sans-serif; /* Use Inter font */
+    max-width: 800px; /* Limit the width of the text */
 }
 
 /*
@@ -608,6 +742,7 @@ nav {
     transition: opacity 300ms, transform 450ms ease;
     color: white;
     max-width: 550px;
+    width: 80%;
 }
 
 .project__wrapper:hover .project__wrapper--bg {
@@ -642,6 +777,29 @@ nav {
     opacity: 0;
     transition: all 450ms ease;
 }
+
+.project__button {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 12px 0;
+    background-color: #0c9590;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 300ms ease;
+  }
+  
+  .project__button:hover {
+    background-color: #2e6e6b;
+  }
+  
+  .project__button:active {
+    background-color: #265a58;
+  }
 
 /*
 
@@ -698,7 +856,7 @@ CASESTUDY
     font-size: 2rem;
     display: flex;
     justify-content: start;
-    padding-bottom: 0.5rem;
+    padding-bottom: 2rem;
 }
 
 .casestudy__item {
@@ -845,7 +1003,7 @@ ABOUT
 
 footer {
     position: relative;
-    background-color: #242424;
+    background-color: #0d474492;
     display: flex;
     padding: 6% 0;
 }
@@ -884,6 +1042,7 @@ footer {
 .shape {
     position: fixed;
     width: 1.5vh;
+    z-index: -1;
 }
 .shape--0 {
     top: 15vh;
@@ -946,7 +1105,43 @@ footer {
         width: 100%;
     }
 
+    nav {
+        padding: 10px 0;
+    }
 
+    .nav__link--list {
+        width: 90%; /* Reduce width for smaller screens */
+        flex-wrap: wrap; /* Allow links to wrap to the next line */
+        padding: 10px;
+    }
+
+    .nav__link {
+        padding: 5px 10px; /* Reduce padding for links */
+    }
+
+    .nav__link--anchor {
+        font-size: 14px; /* Reduce font size for smaller screens */
+    }
+
+    .about__item {
+        flex-direction: column; /* Stack items vertically */
+        text-align: center; /* Center-align content */
+      }
+    
+      .about__item--reverse {
+        flex-direction: column; /* Remove reverse behavior */
+      }
+    
+      .about__img {
+        width: 100%; /* Make images responsive */
+        margin: 0 0 1rem 0; /* Add spacing below the image */
+      }
+    
+      .section__para {
+        width: 100%; /* Ensure text takes full width */
+      }
+
+      
 }
 
 /* 
