@@ -1213,7 +1213,7 @@ Small phone
         font-size: 1rem;
     }
 
-    .nav__link:nth-child(2) {
+    .nav__link:nth-child(3) {
         display: none;
     }
     
