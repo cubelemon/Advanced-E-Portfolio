@@ -1214,6 +1214,11 @@ footer {
         width: 100%; /* Ensure text takes full width */
       }
 
+      .direction__column {
+        display: flex;
+        flex-direction: column;
+    }
+
       
 }
 
@@ -1279,8 +1284,7 @@ Small phone
     }
 
   
-  
-
+    
     .row__half {
         width: 100%;
     }
