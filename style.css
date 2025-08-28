@@ -641,7 +641,7 @@ z-index: 1000;
 .form__submit {
     background-color: #0c9590;
     border: 2px solid #0c9590;
-    border-radius: 5%;
+    border-radius: 0.5rem;
     color: white;
     font-weight: 700;
     width: 100%;
@@ -779,7 +779,7 @@ z-index: 1000;
 
 .project__wrapper {
     position: relative;
-    border-radius: 20px;
+    border-radius: 1rem;
     box-shadow: 0 20px 80px 0 rgb(0, 0, 0, 0.45);
     overflow: hidden;
 }
@@ -861,6 +861,55 @@ z-index: 1000;
   .project__button:active {
     background-color: #265a58;
   }
+
+
+/*
+
+ABOUT TEASER
+
+*/
+
+.about-teaser {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
+    backdrop-filter: blur(10px); /* Frosty glass effect */
+    border-radius: 24px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 1rem;
+    margin: 4rem auto;
+    max-width: 800px;
+  }
+  
+  .about-teaser__title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #084448;
+    margin-bottom: 1rem;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .about-teaser__text {
+    font-size: 1.1rem;
+    color: #444;
+    margin-bottom: 1.5rem;
+  }
+  
+  .about-teaser__link {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    color: #fff;
+    background: #084448; /* matches your palette */
+    border-radius: 0.5rem;
+    text-decoration: none;
+    transition: background 0.3s ease;
+  }
+  
+  .about-teaser__link:hover {
+    background: #0b5d63;
+  }
+  
 
 /*
 
@@ -1170,6 +1219,10 @@ footer {
         flex-direction: column-reverse;
     }
 
+.modal__about {
+    display: none;
+}
+
     .modal__half {
         width: 100%;
     }
@@ -1316,6 +1369,11 @@ Small phone
    .header__content--wrapper {
     flex-direction: column;
     text-align: center;
+   }
+
+
+   .about-teaser {
+    margin: 4rem 1rem;
    }
  
 }
