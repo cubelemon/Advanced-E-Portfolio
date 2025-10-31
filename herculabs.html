@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Herculabs</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="/assets/personal--logo.png">
+    
     <script
       src="https://kit.fontawesome.com/a0bb057924.js"
       crossorigin="anonymous"
@@ -19,548 +21,474 @@
         emailjs.init("CjztJaVfCr5f5FXRR");
       })();
     </script>
-  </head>
-  <body>
-    <section id="landing-page" onmousemove="moveBackground(event)">
-      <nav>
-        <figure>
-          <a href="index.html"
-            ><img id="personal-logo" src="./assets/personal--logo.png" alt=""
-          /></a>
-        </figure>
-        <ul class="nav__link--list">
-          <li class="nav__link">
-            <a
-              href="about.html"
-              class="nav__link--anchor link__hover-effect link__hover-effect--black"
-              >About</a
-            >
-          </li>
-          <li class="nav__link">
-            <a
-              href="#projects"
-              class="nav__link--anchor link__hover-effect link__hover-effect--black"
-              >Projects</a
-            >
-          </li>
-          <li class="nav__link">
-            <a
-              href="#"
-              class="nav__link--anchor link__hover-effect link__hover-effect--black"
-              onclick="toggleModal()"
-              >Contacts</a
-            >
-          </li>
-          <li class="nav__link click" onclick="toggleContrast()">
-            <a
-              href="#"
-              class="nav__link--anchor link__hover-effect link__hover-effect--black"
-              ><i class="fas fa-adjust"></i
-            ></a>
-          </li>
-        </ul>
-      </nav>
-
-      <header class="header">
-        <div class="header__content">
-          <h1 class="title text--blue">Herculabs</h1>
-          <span><h1 class="title">Olympian Simulator Booth</h1></span>
-          <p class="header__para">
-            A Case Study: Bringing fans closer to Olympians
-          </p>
-
-          <div class="social__list">
-            <a
-              href="https://www.linkedin.com/in/natasha-p-ng-9a0a41269/"
-              target="_blank"
-              class="social__link bg--blue click"
-              ><i class="fab fa-linkedin-in"></i
-            ></a>
-            <a
-              href="https://github.com/cubelemon"
-              target="_blank"
-              class="social__link bg--blue click"
-              ><i class="fab fa-github"></i
-            ></a>
-            <a
-              href="./assets/Natasha_Resume_August_2024 copy.pdf"
-              target="_blank"
-              class="social__link bg--blue click"
-              ><i class="fas fa-file-pdf"></i
-            ></a>
-          </div>
-        </div>
-
-        <!-- <div class="row__half">
-                <figure class="header__img--wrapper">
-                    <img src="/assets/herculabs__mockup.png" alt="" class="header__img">
-                </figure>
-              </div> -->
-      </header>
-
-      <a href="#">
-        <button class="mail__btn click" onclick="toggleModal()">
-          <i class="fa-solid fa-envelope"></i>
-        </button>
-      </a>
-      <a href="#projects" class="scroll">
-        <div class="scroll__icon click"></div>
-      </a>
-
-      <div class="modal">
-        <div class="modal__half modal__about">
-          <h3 class="modal__title modal__title--about">
-            Here's a bit about me
-          </h3>
-          <h4 class="modal__sub-title modal__sub-title--about">
-            UX Designer / Frontend Engineer
-          </h4>
-          <p class="modal__para">
-            I'm a 19 year-old
-            <b class="text--orange">Interaction Design Student</b> with a strong
-            passion for developing websites with great
-            <b class="text--orange">user experiences</b>.
-            <br />
-            I currently work on high difficulty engineering problems and design
-            briefs from a team of <b class="text--orange">talented</b> and
-            <b class="text--orange">experienced</b> software engineers every
-            day.
-          </p>
-          <div class="modal__languages">
+</head>
+<body>
+    <section id="landing-page" onmousemove="moveBackground(event)" class="about--landing">
+        <nav>
+          <ul class="nav__link--list">
+            <li>
+              <figure>
+                <a href="index.html"
+                  ><img
+                    id="personal-logo"
+                    src="./assets/personal--logo.png"
+                    alt=""
+                /></a>
+              </figure>
+            </li>
+            <li class="nav__link">
+              <a
+                href="about.html"
+                class="nav__link--anchor link__hover-effect link__hover-effect--black"
+                >About</a
+              >
+            </li>
+            <li class="nav__link">
+              <a
+                href="index.html#projects"
+                class="nav__link--anchor link__hover-effect link__hover-effect--black"
+                >Projects</a
+              >
+            </li>
+            <li class="nav__link">
+              <a
+                href="#"
+                class="nav__link--anchor link__hover-effect link__hover-effect--black"
+                onclick="toggleModal()"
+                >Contacts</a
+              >
+            </li>
+            <li class="nav__link click" onclick="toggleContrast()">
+              <a
+                href="#"
+                class="nav__link--anchor link__hover-effect link__hover-effect--black"
+                ><i class="fas fa-adjust"></i
+              ></a>
+            </li>
+          </ul>
+        </nav>
+  
+        <header class="header">
+            <figure>
+                <img src="./assets/Herculabs_cover.png" alt="">
+            </figure>
+        </header>
+  
+        <a href="#">
+          <button class="mail__btn click" onclick="toggleModal()">
+            <i class="fa-solid fa-envelope"></i>
+          </button>
+        </a>
+        <a href="#projects" class="scroll">
+          <div class="scroll__icon click"></div>
+        </a>
+  
+        <div class="modal">
+          <div class="modal__half modal__about">
+            <h3 class="modal__title modal__title--about">
+              Here's a bit about me
+            </h3>
+            <h4 class="modal__sub-title modal__sub-title--about">
+              UX Designer / Frontend Engineer
+            </h4>
+            <p class="modal__para">
+              I’m an interaction designer who sees every design as a work in
+              progress — imperfect but full of potential. I thrive in fast-moving
+              environments, adapting quickly, shipping often, and using each
+              iteration as a launchpad for innovation.
+            </p>
             <div class="modal__languages">
-              <figure class="modal__language">
-                <img
-                  class="modal__language--img"
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
-                  alt=""
-                />
-                <span class="language__name">HTML</span>
-              </figure>
-              <figure class="modal__language">
-                <img
-                  class="modal__language--img"
-                  src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png"
-                  alt=""
-                />
-                <span class="language__name">CSS</span>
-              </figure>
-              <figure class="modal__language">
-                <img
-                  class="modal__language--img"
-                  src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png"
-                  alt=""
-                />
-                <span class="language__name">JavaScript</span>
-              </figure>
-
-              <figure class="modal__language">
-                <img
-                  class="modal__language--img"
-                  src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png"
-                  alt=""
-                />
-                <span class="language__name">React</span>
-              </figure>
-
-              <figure class="modal__language">
-                <img
-                  class="modal__language--img"
-                  src="https://static-00.iconduck.com/assets.00/figma-icon-1024x1024-mvfh9xsk.png"
-                  alt=""
-                />
-                <span class="language__name">Figma</span>
-              </figure>
-
-              <figure class="modal__language">
-                <img
-                  class="modal__language--img"
-                  src="https://seeklogo.com/images/A/adobe-illustrator-logo-775FAF240B-seeklogo.com.png"
-                  alt=""
-                />
-                <span class="language__name">Illustrator</span>
-              </figure>
-
-              <figure class="modal__language">
-                <img
-                  class="modal__language--img"
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/2101px-Adobe_Photoshop_CC_icon.svg.png"
-                  alt=""
-                />
-                <span class="language__name">Photoshop</span>
-              </figure>
-              <!-- <figure class="modal__language">
+              <div class="modal__languages">
+                <figure class="modal__language">
                   <img
                     class="modal__language--img"
-                    src="https://cdn.iconscout.com/icon/free/png-256/typescript-3521774-2945272.png"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
                     alt=""
-                  /> -->
-              <!-- <span class="language__name">TypeScript</span>
+                  />
+                  <span class="language__name">HTML</span>
+                </figure>
+                <figure class="modal__language">
+                  <img
+                    class="modal__language--img"
+                    src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png"
+                    alt=""
+                  />
+                  <span class="language__name">CSS</span>
+                </figure>
+                <figure class="modal__language">
+                  <img
+                    class="modal__language--img"
+                    src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png"
+                    alt=""
+                  />
+                  <span class="language__name">JavaScript</span>
                 </figure>
   
                 <figure class="modal__language">
                   <img
                     class="modal__language--img"
-                    src="https://mobx.js.org/img/mobx.png"
+                    src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png"
                     alt=""
                   />
-                  <span class="language__name">MobX</span>
-                </figure> -->
-
-              <!-- <figure class="modal__language">
-                  <img
-                    class="modal__language--img"
-                    src="https://cdn.iconscout.com/icon/free/png-256/vue-282497.png"
-                    alt=""
-                  />
-                  <span class="language__name">Vue</span>
+                  <span class="language__name">React</span>
                 </figure>
+  
                 <figure class="modal__language">
                   <img
                     class="modal__language--img"
-                    src="https://cdn.iconscout.com/icon/free/png-256/nuxt-dot-js-3628959-3030184.png"
+                    src="https://www.figma.com/community/resource/b2593c93-dcd3-4eab-942a-b7703505d1eb/thumbnail"
                     alt=""
                   />
-                  <span class="language__name">Nuxt</span>
-                </figure> -->
+                  <span class="language__name">Figma</span>
+                </figure>
+  
+                <figure class="modal__language">
+                  <img
+                    class="modal__language--img"
+                    src="https://seeklogo.com/images/A/adobe-illustrator-logo-775FAF240B-seeklogo.com.png"
+                    alt=""
+                  />
+                  <span class="language__name">Illustrator</span>
+                </figure>
+  
+                <figure class="modal__language">
+                  <img
+                    class="modal__language--img"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/2101px-Adobe_Photoshop_CC_icon.svg.png"
+                    alt=""
+                  />
+                  <span class="language__name">Photoshop</span>
+                </figure>
+                <!-- <figure class="modal__language">
+                    <img
+                      class="modal__language--img"
+                      src="https://cdn.iconscout.com/icon/free/png-256/typescript-3521774-2945272.png"
+                      alt=""
+                    /> -->
+                <!-- <span class="language__name">TypeScript</span>
+                  </figure>
+    
+                  <figure class="modal__language">
+                    <img
+                      class="modal__language--img"
+                      src="https://mobx.js.org/img/mobx.png"
+                      alt=""
+                    />
+                    <span class="language__name">MobX</span>
+                  </figure> -->
+  
+                <!-- <figure class="modal__language">
+                    <img
+                      class="modal__language--img"
+                      src="https://cdn.iconscout.com/icon/free/png-256/vue-282497.png"
+                      alt=""
+                    />
+                    <span class="language__name">Vue</span>
+                  </figure>
+                  <figure class="modal__language">
+                    <img
+                      class="modal__language--img"
+                      src="https://cdn.iconscout.com/icon/free/png-256/nuxt-dot-js-3628959-3030184.png"
+                      alt=""
+                    />
+                    <span class="language__name">Nuxt</span>
+                  </figure> -->
+              </div>
+            </div>
+          </div>
+          <div class="modal__half modal__contact">
+            <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
+            <h3 class="modal__title modal__title--contact">Let's have a chat</h3>
+            <h3 class="modal__sub-title modal__sub-title--contact">
+              I'm currently open to new oppurtunities.
+            </h3>
+            <form id="contact__form" onsubmit="contact(event)">
+              <div class="form__item">
+                <label class="form__item--label" for="name">Name</label>
+                <input class="input" type="text" name="user_name" required />
+              </div>
+  
+              <div class="form__item">
+                <label class="form__item--label" for="name">Email</label>
+                <input class="input" type="email" name="user_email" required />
+              </div>
+  
+              <div class="form__item">
+                <label class="form__item--label" for="name">Message</label>
+                <textarea
+                  class="input"
+                  type="text"
+                  name="message"
+                  required
+                ></textarea>
+              </div>
+  
+              <button id="contact__submit" class="form__submit">
+                Send it my way
+              </button>
+            </form>
+            <div class="modal__overlay modal__overlay--loading">
+              <i class="fas fa-spinner"></i>
+            </div>
+            <div class="modal__overlay modal__overlay--success">
+              Thanks for the message! Looking forward to speaking to you soon.
             </div>
           </div>
         </div>
-        <div class="modal__half modal__contact">
-          <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
-          <h3 class="modal__title modal__title--contact">Let's have a chat</h3>
-          <h3 class="modal__sub-title modal__sub-title--contact">
-            I'm currently open to new oppurtunities.
-          </h3>
-          <form id="contact__form" onsubmit="contact(event)">
-            <div class="form__item">
-              <label class="form__item--label" for="name">Name</label>
-              <input class="input" type="text" name="user_name" required />
+        
+      </section>
+<section id="casestudy-desc">
+    <div class="row">
+        <div class="container ">
+            <div class="casestudy__title--container">
+                <h2 class="casestudy__title">What is&nbsp;<span class="text--blue">Herculabs</span> ?</h2>
+                <i class="title__icon fa-solid fa-arrow-pointer"></i>
             </div>
-
-            <div class="form__item">
-              <label class="form__item--label" for="name">Email</label>
-              <input class="input" type="email" name="user_email" required />
-            </div>
-
-            <div class="form__item">
-              <label class="form__item--label" for="name">Message</label>
-              <textarea
-                class="input"
-                type="text"
-                name="message"
-                required
-              ></textarea>
-            </div>
-
-            <button id="contact__submit" class="form__submit">
-              Send it my way
-            </button>
-          </form>
-          <div class="modal__overlay modal__overlay--loading">
-            <i class="fas fa-spinner"></i>
-          </div>
-          <div class="modal__overlay modal__overlay--success">
-            Thanks for the message! Looking forward to speaking to you soon.
-          </div>
-        </div>
+            <p class="about--subtitle">It's all about bringing fans closer to Olympians.</p>
+            <p class="section__para casestudy__para">
+                HercuLabs transforms the way fans experience the Olympics, 
+                letting them step into the shoes of their favorite athletes. 
+                Through immersive VR technology, users can feel the intensity 
+                of competition firsthand—bridging the gap between spectators 
+                and the sports they love, long after the Games end.
       </div>
-      <img src="./assets/semi circle.svg" class="shape shape--0" />
-      <img src="./assets/circle.svg" class="shape shape--1" />
-      <img src="./assets/squiggly.svg" class="shape shape--2" />
-      <img src="./assets/circle.svg" class="shape shape--3" />
-      <img src="./assets/triangle.svg" class="shape shape--4" />
-      <img src="./assets/circle.svg" class="shape shape--5" />
-      <img src="./assets/squiggly.svg" class="shape shape--6" />
-      <img src="./assets/circle.svg" class="shape shape--7" />
-      <img src="./assets/semi circle.svg" class="shape shape--8" />
-    </section>
-
-    <section id="casestudy">
-      <div class="container">
-        <div class="row">
-          <ul class="casestudy__sections">
-            <li class="casestudy__item">
-              <h2 class="casestudy__title">Introduction</h2>
-              <div class="casestudy__item--row">
-                <figure class="casestudy__img--wrapper">
-                  <img
-                    class="casestudy__item--img"
-                    src="./assets/herculabs.png"
-                    alt=" "
-                  />
-                </figure>
-
-                <div class="casestudy__item--content right">
-                  <h3 class="case--title">
-                    <strong
-                      >What if you could step into the shoes of an Olympic
-                      champion?</strong
-                    >
-                  </h3>
-                  <br />
-                  <p class="case--para">
-                    Imagine the roar of the crowd, the pressure of a
-                    game-defining moment, and the exhilaration of triumph.
-                    HercuLabs brought this vision to life through the
-                    <strong class="text--blue"
-                      >Athlete Experience Simulator Booth</strong
-                    >, a VR-powered innovation designed to create meaningful
-                    connections between fans and Olympians, extending the magic
-                    of the games far beyond the closing ceremony.
-                  </p>
-                </div>
-              </div>
-            </li>
-
-            <li class="casestudy__item">
-              <h2 class="casestudy__title">The Problem</h2>
-              <div class="casestudy__item--row">
-                <div class="casestudy__item--content">
-                  <h3 class="case--title">
-                    <strong
-                      >The Olympic Games are a global spectacle that captures
-                      the world’s attention, but their impact is often
-                      fleeting.</strong
-                    >
-                  </h3>
-                  <br />
-                  <p class="case--para">
-                    Fans lose their connection to the athletes once the event
-                    ends, while athletes face challenges staying visible until
-                    the next competition.
-                    <strong class="text--blue">
-                      HercuLabs aimed to address this gap, ensuring the Olympic
-                      spirit lives on and continues to inspire </strong
-                    >.
-                  </p>
-                </div>
-
-                <figure class="casestudy__img--wrapper right">
-                  <img
-                    class="casestudy__item--img"
-                    src="./assets/Herculab/herculabs__problem.png"
-                    alt=" "
-                  />
-                </figure>
-              </div>
-            </li>
-
-            <li class="casestudy__item">
-              <h2 class="casestudy__title">The Vision</h2>
-              <div class="casestudy__item--row">
-                <figure class="casestudy__img--wrapper">
-                  <img
-                    class="casestudy__item--img"
-                    src="./assets/Herculab/vision.png"
-                    alt=" "
-                  />
-                </figure>
-
-                <div class="casestudy__item--content right">
-                  <h3 class="case--title">
-                    <strong
-                      >HercuLabs envisioned a fan experience that went beyond
-                      spectating.</strong
-                    >
-                  </h3>
-                  <br />
-                  <p class="case--para">
-                    By allowing users to embody their favorite athletes, the
-                    simulator created an intimate, empathetic, and long-lasting
-                    bond between fans and Olympians.
-                  </p>
-                </div>
-              </div>
-            </li>
-
-            <li class="casestudy__item">
-              <h2 class="casestudy__title">The Solution</h2>
-              <div class="casestudy__item--row">
-                <div class="casestudy__item--content">
-                  <h3 class="case--title">
-                    <strong
-                      >The Athlete Experience Simulator Booth transformed fan
-                      engagement through:</strong
-                    >
-                  </h3>
-                  <br />
-                  <ol class="casestudy__item--list">
-                    <li class="item__list--item">
-                      <strong>Immersive VR Gameplay:</strong> Users could
-                      compete as Olympic legends like Ma Long, experiencing the
-                      thrill of high-stakes matches.
-                    </li>
-                    <li class="item__list--item">
-                      <strong>Interactive Photo Booths:</strong> Fans captured
-                      memories with virtual avatars of their favorite athletes
-                      in iconic Olympic settings.
-                    </li>
-                    <li class="item__list--item">
-                      <strong>Personalized Experiences:</strong> Fitness levels
-                      and gameplay challenges were adjustable, making the booth
-                      accessible to all participants.
-                    </li>
-                  </ol>
-                </div>
-
-                <figure class="casestudy__img--wrapper right">
-                  <img
-                    class="casestudy__item--img"
-                    src="./assets/Herculab/solution.png"
-                    alt=" "
-                  />
-                </figure>
-              </div>
-            </li>
-
-            <li class="casestudy__item">
-              <h2 class="casestudy__title title-center">Omnichannel Integration</h2>
-              <div class="casestudy__item--row item__column">
-                <figure class="casestudy__img--wrapper item__wide">
-                  <img
-                    class="casestudy__item--img"
-                    src="./assets/Herculab/omni.png"
-                    alt=" "
-                  />
-                </figure>
-
-                <div class="casestudy__item--content item__wide bottom">
-                  <h3 class="case--title">
-                    HercuLabs enhanced the booth’s impact by integrating it into
-                    a broader omnichannel ecosystem, ensuring fans remained
-                    connected across platforms:
-                  </h3>
-                  <br />
-                  <ul class="casestudy__item--list">
-                    <li class="item__list--item">
-                      A companion app delivered digital mementos, such as VR
-                      highlights and photos, directly to users’ devices.
-                    </li>
-                    <li class="item__list--item">
-                      The app provided exclusive athlete content, updates on
-                      future events, and an online community for fans to share
-                      their experiences.
-                    </li>
-                    <li class="item__list--item">
-                      This seamless connection kept fans engaged long after
-                      their physical visit to the booth.
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </li>
-
-            <li class="casestudy__item">
-              <h2 class="casestudy__title title-center">Prototype</h2>
-              <div class="casestudy__item--row item__column">
-                <figure class="casestudy__img--wrapper item__wide">
-                  <iframe
-                    style="border: 1px solid rgba(0, 0, 0, 0.1)"
-                    width="800"
-                    height="450"
-                    src="https://embed.figma.com/proto/t0IXpfZeCPmihOlmrBNThk/A3-Digital-Interfaces?page-id=2215%3A1900&node-id=2913-4534&viewport=1385%2C-168%2C0.2&scaling=scale-down&content-scaling=fixed&starting-point-node-id=2913%3A4534&show-proto-sidebar=1&embed-host=share"
-                    allowfullscreen
-                  ></iframe>
-                </figure>
-
-                <div class="casestudy__item--content item__wide bottom">
-                  <h3 class="case--title column__title">
-                    Try out the photobooth prototype above!
-                  </h3>
-                </div>
-              </div>
-            </li>
-
-            <li class="casestudy__item">
-              <h2 class="casestudy__title title-center">The Impact</h2>
-              <div class="casestudy__item--row item__column">
-                <figure class="casestudy__img--wrapper item__wide">
-                  <img
-                    class="casestudy__item--img"
-                    src="./assets/Herculab/relation.png"
-                    alt=" "
-                  />
-                </figure>
-
-                <div class="casestudy__item--content item__wide bottom">
-                  <h3 class="case--title">
-                    Feedback demonstrated the transformative potential of the
-                    HercuLabs solution:
-                  </h3>
-                  <br />
-                  <ul class="casestudy__item--list">
-                    <li class="item__list--item">
-                      <strong>Deeper Connections: </strong>Fans felt a renewed
-                      appreciation for the dedication and skill of their
-                      favourite athletes.
-                    </li>
-                    <li class="item__list--item">
-                      <strong>Social Media Buzz: </strong>Digital keepsakes,
-                      such as photos and VR clips, drove social sharing and
-                      excitement.
-                    </li>
-                    <li class="item__list--item">
-                      <strong>Sustained Engagement: </strong>Fans remained
-                      active participants in the Olympic narrative, staying
-                      connected through the app.
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </li>
-          </ul>
+    <div class="casestudy__list">
+        <div class="casestudy__item">
+            <h3 class="casestudy__item--title">Role</h3>
+            <p class="casestudy__item--desc">Product & Visual Designer</p>
         </div>
-      </div>
-    </section>
-
-    <footer>
-      <div class="container">
-        <div class="row footer__row">
-          <figure>
-            <img
-              class="footer__logo--img"
-              src="./assets/personal--logo.svg"
-              alt=""
-            />
-          </figure>
-          <div class="footer__social--list">
-            <a
-              href="https://github.com/cubelemon"
-              target="_blank"
-              class="footer__social--link link__hover-effect link__hover-effect--white"
-            >
-              GitHub
-            </a>
-
-            <a
-              href="https://www.linkedin.com/in/natasha-p-ng-9a0a41269/"
-              target="_blank"
-              class="footer__social--link link__hover-effect link__hover-effect--white"
-            >
-              LinkedIn
-            </a>
-
-            <a
-              href="#"
-              class="footer__social--link link__hover-effect link__hover-effect--white"
-              onclick="toggleModal()"
-            >
-              Contact
-            </a>
-
-            <a
-              href="./assets/Natasha_Resume_August_2024 copy.pdf"
-              target="_blank"
-              class="footer__social--link link__hover-effect link__hover-effect--white"
-            >
-              Resume
-            </a>
-          </div>
-          <div class="footer__copyright">
-            Designed & Developed by Natasha Png
-          </div>
+        <div class="casestudy__item">
+            <h3 class="casestudy__item--title">Duration</h3>
+            <p class="casestudy__item--desc">Jan 2023 - Apr 2023</p>
         </div>
+        <div class="casestudy__item">
+            <h3 class="casestudy__item--title">Tools</h3>
+            <p class="casestudy__item--desc">Figma, Adobe Illustrator, Adobe Photoshop</p>
+        </div>
+    </div>
+</section>
+
+<section id="dark__box">
+    <div class="row">
+        <div class="container dark__container ">
+            <h2 class="dark__box--title casestudy__title">Check out our timeline</h2>
+            <h3 class="casestudy--subtitle">Our design process took us 12 weeks to complete.</h3>
+            <p class="italics dark__box--para">
+                | Sections outlined in <strong class="text--pink">pink</strong> indicate my primary contributions. |
+            </p>
+            <ul class="bubble__list">
+                <li class="bubble__container border--pink">
+                    <div class="bubble__top">
+                        <div class="bubble__icon">
+                            <i class="fa-solid fa-chart-simple"></i>
+                        </div>
+                        <div class="bubble__title--container">
+                            <h3 class="bubble__title">Research</h3>
+                            <p>20 hours</p>
+                        </div>
+                    </div>
+                    <ul class="bubble__bottom">
+                        <li class="bubble__list--item">
+                            Problem Scenario Research
+                        </li>
+                        <li class="bubble__list--item">
+                            Interview & Surveys                        
+                        </li>
+                        <li class="bubble__list--item">
+                            Contextual Observations
+                        </li>
+                        <li class="bubble__list--item">
+                            Data Analysis & Synthesis
+                        </li>
+                    </ul>
+                </li>
+                <li class="bubble__container">
+                    <div class="bubble__top">
+                        <div class="bubble__icon">
+                            <i class=" fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <div class="bubble__title--container">
+                            <h3 class="bubble__title">Wireframes</h3>
+                            <p>40 hours</p>
+                        </div>
+                    </div>
+                    <ul class="bubble__bottom">
+                        <li class="bubble__list--item">
+                            Concept Ideation & testing
+                        </li>
+                        <li class="bubble__list--item">
+                            Sketches & Storyboards                       
+                        </li>
+                        <li class="bubble__list--item">
+                            Concept evaluation 
+                        </li>
+                        <li class="bubble__list--item">
+                            Wireframes
+                        </li>
+                    </ul>
+                </li>
+                <li class="bubble__container">
+                    <div class="bubble__top">
+                        <div class="bubble__icon">
+                            <i class="fa-solid fa-vial"></i>
+                        </div>
+                        <div class="bubble__title--container">
+                            <h3 class="bubble__title">Testing</h3>
+                            <p>20 hours</p>
+                        </div>
+                    </div>
+                    <ul class="bubble__bottom">
+                        <li class="bubble__list--item">
+                            Wireframe usability test                        </li>
+                        <li class="bubble__list--item">
+                            Mock up usability test                        </li>
+                        <li class="bubble__list--item">
+                            AB Testing of features                        </li>
+                        <li class="bubble__list--item">
+                            Analysis & fixes                        </li>
+                    </ul>
+                </li>
+                <li class="bubble__container border--pink">
+                    <div class="bubble__top">
+                        <div class="bubble__icon">
+                            <i class="fa-solid fa-paperclip"></i>
+                        </div>
+                        <div class="bubble__title--container">
+                            <h3 class="bubble__title">Final UI</h3>
+                            <p>20 hours</p>
+                        </div>
+                    </div>
+                    <ul class="bubble__bottom">
+                        <li class="bubble__list--item">
+                            Design System                        </li>
+                        <li class="bubble__list--item">
+                            Prototyping                        </li>
+                        <li class="bubble__list--item">
+                            Expert testing                        </li>
+                        <li class="bubble__list--item">
+                            Final design fixes                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h2 class="dark__box--title casestudy__title">My Key Contributions</h2>
+
+            <ul class="bubble__list ">
+                <li class="bubble__container ">
+                    <div class="bubble__top row__direction">
+                        <div class="bubble__icon">
+                           <h1>🧐</h1>
+                        </div>
+                        <div class="bubble__title--container">
+                            <h3 class="bubble__title">Defining the Problem</h3>
+                            <p class="bubble__list--item">Understanding that behaviour doesn’t always 
+                                match reported data, I led contextual observations
+                                to capture genuine fan experiences during Olympic 
+                                screenings.</p>
+                        </div>
+                    </div>
+                    
+                </li>
+                <li class="bubble__container ">
+                    <div class="bubble__top row__direction">
+                        <div class="bubble__icon">
+                            <h1>👀</h1>
+                        </div>
+                        <div class="bubble__title--container">
+                            <h3 class="bubble__title">Visualising the Problem & Solution</h3>
+                            <p class="bubble__list--item">To support clear and compelling pitches, I visualised the problem through storyboards & used annotated sketches to bring our concept to life.</p>
+                        </div>
+                    </div>
+                    
+                </li>
+                <li class="bubble__container ">
+                    <div class="bubble__top row__direction">
+                        <div class="bubble__icon">
+                        </div>
+                        <h1>🎨</h1>
+                        <div class="bubble__title--container">
+                            <h3 class="bubble__title">UI Redesign & Visual Lead</h3>
+                            <p class="bubble__list--item">I took charge of a visual redesign to make sure every element stayed true to Herculabs’ branding.</p>
+                        </div>
+                    </div>
+                    
+                </li>
+
+            </ul>
+            <h3 class="casestudy--subtitle">Now you know more about my role, 
+                read on to see what we ended up building!</h3>
+
+        </div>
+    </div>
+</section>
+
+<section id="casestudy-desc">
+    <div class="row">
+        <div class="container ">
+            <div class="casestudy__title--container">
+                <h2 class="casestudy__title">The Idea</h2>
+                <i class="title__icon fa-solid fa-lightbulb"></i>
+            </div>
+            <p class="about--subtitle italics">We wanted to bridge the gap between fans and athletes, making post-game engagement more meaningful.</p>
+            <p class="section__para casestudy__para">
+                I worked on HercuLabs, a project that reimagines fan-athlete engagement. Our solution? The Olympic Athlete Experience Simulator Booth—a VR-powered experience where fans step into the shoes of an Olympian. Instead of just watching, they feel the intensity of the competition.
       </div>
-    </footer>
-  </body>
+
+</section>
+<section id="casestudy-desc">
+    <div class="row">
+        <div class="container ">
+            <div class="casestudy__title--container">
+                <h2 class="casestudy__title">So why do fans lose interest after the Olympics?</h2>
+                <i class="title__icon fa-solid fa-lightbulb"></i>
+            </div>
+            <p class="about--subtitle italics">This is where we dug the internet and found that...</p>
+            <ul class="bubble__list direction__column">
+                <li class="bubble__container bubble--light">
+                    
+                        <div class="bubble__icon">
+                           <h1>🫥</h1>
+                        </div>
+                        <div class="bubble__title--container">
+                            <h3 class="bubble__title">Remote fan support feels invisible to athletes.</h3>
+                            
+                        </div>
+                   
+                    
+                </li>
+                <li class="bubble__container bubble--light">
+
+                        <div class="bubble__icon">
+                            <h1>🏋️</h1>
+                        </div>
+                        <div class="bubble__title--container">
+                            <h3 class="bubble__title">Social media doesn’t provide meaningful interactions between fans and athletes.</h3>
+                        </div>
+
+                    
+                </li>
+                <li class="bubble__container bubble--light">
+
+                        <div class="bubble__icon">
+                        </div>
+                        <h1>🔍</h1>
+                        <div class="bubble__title--container">
+                            <h3 class="bubble__title">Fans focus on specific athletes, not the whole national team.</h3>
+                        </div>
+
+                    
+                </li>
+
+            </ul>
+            <h4 class="section__para casestudy__para">
+                The biggest issue? <strong>Once the games end, the hype dies. </strong>Fans want to stay engaged, but existing platforms aren’t built for that. 
+            </h4>
+
+                               </p>
+
+      </div>
+      </div>
+
+</section>
+</body>
 </html>
